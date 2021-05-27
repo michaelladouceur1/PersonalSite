@@ -1,0 +1,79 @@
+/* light blue = #75b9be */
+/* light green = #96ffb7 */
+/* darker green = #57fa8b */
+
+/* FIGURE 8 ICON */
+
+.figure-8 {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: 0.5s ease-in-out;
+}
+
+.figure-8:hover {
+    box-shadow: 0 0 10px #57fa8b;
+}
+
+.dot-container {
+    position: relative;
+    display: flex;
+    height: 50%;
+    width: 50%;
+    background-color: transparent;
+    border-radius: 50%;
+    animation-name: rot;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes rot {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.dc-tb {
+    margin: 0 auto;
+}
+
+.dc-rl {
+    margin: auto 0;
+}
+
+.dot {
+    height: 5px;
+    width: 5px;
+    background-color: white;
+    border-radius: 50%;
+    animation-name: colorsize;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes colorsize {
+    0% {
+    /*     background-color: white; */
+        height: 5px;
+        width: 5px;
+    }
+    50% {
+        background-color: #96ffb7;
+        height: 15px;
+        width: 15px;
+    }
+}
+
+#dc1 {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#dc2 {
+    justify-content: flex-start;
+    align-items: center;
+}

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,200&display=swap');
+@import url('./utility.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #141414;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* HEADER  */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    height: 100px;
+    min-height: 100px;
+}
+
+nav {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.7rem;
+    transition: color 0.5s;
+}
+
+nav > a:hover {
+    color: #96ffb7;
+}
+
+/* MAIN  */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 1000px;
+    max-width: 1000px;
+}
+
+main h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 200;
+    color: #96ffb7;
+}
+
+main h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.emphasize {
+    color: white;
+    animation-name: colors;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes colors {
+    0% {
+        color: white;
+    }
+    50% {
+        color: #96ffb7;
+    }
+}
+
+#quote {
+    width: 750px;
+    font-weight: 200;
+    text-align: center;
+}
+
+/* FOOTER  */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 15px;
+    height: 60px;
+    width: 98%;
+    color: white;
+}
+
+footer i {
+    margin-left: 15px;
+    font-size: 30px;
+    transition: color 0.5s;
+}
+
+footer i:hover {
+    color: #96ffb7;
+}

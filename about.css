@@ -1,0 +1,21 @@
+@import url('./index.css');
+@import url('./page.css');
+
+.profile {
+    display: flex;
+    justify-content: center;
+}
+
+.profile img {
+    margin: 0 30px;
+    width: 40%;
+    border-radius: 50%;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: gray; */
+    width: 30%;
+}

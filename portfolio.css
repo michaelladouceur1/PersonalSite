@@ -1,0 +1,79 @@
+@import url('./index.css');
+@import url('./page.css');
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.portfolio-item {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 0 10%;
+    transition: transform 0.5s;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+    /* filter: blur(2px); */
+}
+
+.portfolio-item-info {
+    position: absolute;
+    display: none;
+    width: 80%;
+    height: 100%;
+    background-color: rgba(150, 255, 183, 0.25);
+    transition: 0.5s;
+}
+
+.portfolio-item-info h3 {
+    font-size: 1.5rem;
+    border-bottom: 1px solid white;
+}
+
+.portfolio-item-info p {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.portfolio-item-info-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 10px 10px;
+}
+
+.portfolio-item-info-menu a {
+    margin-left: 10px;
+}
+
+.portfolio img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.portfolio-preview {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; */
+    display: none;
+}
+
+.portfolio-preview iframe {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 30%;
+    width: 90%;
+    height: 80%;
+    overflow: auto;
+    /* zoom: 1.5;
+    transform: scale(0.7); */
+}
